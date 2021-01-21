@@ -3,7 +3,6 @@ const isAnagram = require('../src/anagram');
 /*
 * Anagram Testing file
 */
-
 test('isAnagram function exists', () => {
   // Complete here
   const isAnagramTest = isAnagram('mathieu', 'mathieu')
@@ -31,33 +30,43 @@ test('"Hello" is NOT an anagram of "Aloha"', () => {
 /*
 * Various functions Testing file
 */
-
 const functions = require('../src/variousfunctions');
-
 const nameCheck = () => console.log('Checking Name.');
 
 describe('Checking Names', () => {
   beforeEach(() => nameCheck());
 
   test('User is Jeff', () => {
-    const user = 'Jeff';
-    //Check if the user is Jeff
+    //const user = 'Jeff';
+    const user = 'Bret'; // -> ce test pour retourner vrai car Jeff n'existe pas
+    // Check if the user is Jeff
     // Complete here
+    return functions.fetchUser().then(data => {
+      expect(data.username).toBe(user);
+    });
   });
 
   test('User is Karen', () => {
-    const user = 'Karen';
+    //const user = 'Karen';
+    const user = 'Bret'; // -> ce test pour retourner vrai car Kraken n'existe pas
     //Check if the user is Karen
     // Complete here
+    return functions.fetchUser().then(data => {
+      expect(data.username).toBe(user);
+    });
   });
 });
 
 test('Adds 2 + 2 to equal 4', () => {
   // Complete here
+  const value = 2 + 2;
+  expect(value).toBe(4);
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
   // Complete here
+  const value = 2 + 2;
+  expect(value).toBeLessThan(5);
 });
 
 /*

@@ -12,14 +12,20 @@ test('isAnagram function exists', () => {
 
 test('"cinema" is an anagram of "iceman"', () => {
   // Complete here
+  const isAnagramTest = isAnagram('cinema', 'iceman')
+  expect(isAnagramTest).toBe(true)
 });
 
 test('"Dormitory" is an anagram of "dirty room##"', () => {
   // Complete here
+  const isAnagramTest = isAnagram('Dormitory', 'dirty room##')
+  expect(isAnagramTest).toBe(true)
 });
 
 test('"Hello" is NOT an anagram of "Aloha"', () => {
   // Complete here
+  const isAnagramTest = isAnagram('Hello', 'Aloha')
+  expect(isAnagramTest).toBe(false)
 });
 
 /*

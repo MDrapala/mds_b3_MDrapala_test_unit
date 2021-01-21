@@ -108,9 +108,6 @@ test('There is no I in the word team', () => {
 
 // Arrays
 test('Admin should be in usernames', () => {
-  const usernames = jest.fn();
-  usernamesEach = (usernames, ['john', 'karen', 'admin']);
-  expect(usernames).toHaveBeenNthCalledWith(3, 'admin');
 });
 
 // Working with async data

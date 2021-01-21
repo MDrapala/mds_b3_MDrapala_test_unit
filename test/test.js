@@ -59,14 +59,12 @@ describe('Checking Names', () => {
 
 test('Adds 2 + 2 to equal 4', () => {
   // Complete here
-  const value = 2 + 2;
-  expect(value).toBe(4);
+  expect(functions.add(2,2)).toBe(4);
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
   // Complete here
-  const value = 2 + 2;
-  expect(value).toBeLessThan(5);
+  expect(functions.add(2,2)).toBeLessThan(5);
 });
 
 /*
@@ -82,23 +80,25 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 
 test('Should be null', () => {
   // Complete here
+  expect(functions.isNull()).toBeNull();
 });
 
 // toBeFalsy
 test('Should be falsy', () => {
   // Complete here
+  expect(functions.add()).toBeFalsy();
 });
 
 // toEqual
 test('User should be Marc Antoine object', () => {
   // Complete here
+  expect(functions.createUser()).toEqual({ firstName: 'Marc', lastName: 'Antoine'});
 });
 
 // Less than and greater than
 test('Should be under or equal 1000', () => {
-  const load1 = 500;
-  const load2 = 500;
   // Complete here
+  expect(functions.checkValue(1000)).toBeGreaterThanOrEqual(1000);
 });
 
 // Regex
@@ -108,12 +108,12 @@ test('There is no I in the word team', () => {
 
 // Arrays
 test('Admin should be in usernames', () => {
-  usernames = ['john', 'karen', 'admin'];
-  // Complete here
+  const usernames = jest.fn();
+  usernamesEach = (usernames, ['john', 'karen', 'admin']);
+  expect(usernames).toHaveBeenNthCalledWith(3, 'admin');
 });
 
 // Working with async data
-
 // Async Await since ES7
 test('User fetched name should be Leanne Graham', async () => {
   const data = await functions.fetchUser();
@@ -123,15 +123,15 @@ test('User fetched name should be Leanne Graham', async () => {
 /*
 * ReverseString Testing file
 */
-
 const reverseString = require('../src/reversestr');
-
 test('reverseString function exists', () => {
   // Complete here
+  //expect(reverseString()).toBe(true)
 });
 
 test('String reverses', () => {
   // Complete here
+  const value = reverseString('mathieu').join
 });
 
 test('String reverses with uppercase', () => {

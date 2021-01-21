@@ -1,13 +1,13 @@
 const isAnagram = require('../src/anagram');
 
 /*
-
 * Anagram Testing file
-
 */
 
 test('isAnagram function exists', () => {
   // Complete here
+  const isAnagramTest = isAnagram('mathieu', 'mathieu')
+  expect(isAnagramTest).toBe(true)
 });
 
 test('"cinema" is an anagram of "iceman"', () => {
@@ -23,9 +23,7 @@ test('"Hello" is NOT an anagram of "Aloha"', () => {
 });
 
 /*
-
 * Various functions Testing file
-
 */
 
 const functions = require('../src/variousfunctions');
@@ -57,9 +55,7 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 });
 
 /*
-
 * Informations
-
 */
 
 // CHECK FOR true & false VALUES
@@ -110,9 +106,7 @@ test('User fetched name should be Leanne Graham', async () => {
 });
 
 /*
-
 * ReverseString Testing file
-
 */
 
 const reverseString = require('../src/reversestr');

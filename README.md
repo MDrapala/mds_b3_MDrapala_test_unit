@@ -2,13 +2,13 @@
 
 #Projet tests unitaire avec JEST - MyDigitalSchool
 
-###Préambule
+### Préambule
 Il s’agit de diverses fonctions à tester :
   - Une fonction anagram
   - Une fonction pour inverser une chaine de caractere Différentes fonctions basiques
   - Différentes fonctions basiques
 
-###Consignes
+### Consignes
 1. Récupérer le code source de la structure des tests Jest Git url : https://github.com/?/unit_test
 2. Compléter l’ensemble des tests avec le framework Jest.
 3. Intégrer le coverage sur l’ensemble du code source.

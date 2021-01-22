@@ -1,5 +1,12 @@
-# unit_test
+# Test Unitaire
 Unit test with Jest
 
 # How to execute test ?
-npm test
+
+```git clone https://github.com/MDrapala/unit_test.git```
+
+```cd unit_test```
+
+```npm i or npm install```
+
+```npm test```

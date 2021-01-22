@@ -19,7 +19,7 @@ Il s’agit de diverses fonctions à tester :
   
 Documentation Jest FrameWork : https://jestjs.io/docs/en/getting-started.
 
-#Installation + Exécution des tests
+# Installation + Exécution des tests
 
 ```git clone https://github.com/MDrapala/mds_b3_MDrapala_test_unit.git```
 

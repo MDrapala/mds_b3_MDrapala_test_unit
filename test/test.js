@@ -5,26 +5,22 @@ const isAnagram = require('../src/anagram');
 */
 test('isAnagram function exists', () => {
   // Complete here
-  const isAnagramTest = isAnagram('mathieu', 'mathieu')
-  expect(isAnagramTest).toBe(true)
+  expect(isAnagram()).toBeDefined();
 });
 
 test('"cinema" is an anagram of "iceman"', () => {
   // Complete here
-  const isAnagramTest = isAnagram('cinema', 'iceman')
-  expect(isAnagramTest).toBe(true)
+  expect(isAnagram('cinema', 'iceman')).toBeTruthy();
 });
 
 test('"Dormitory" is an anagram of "dirty room##"', () => {
   // Complete here
-  const isAnagramTest = isAnagram('Dormitory', 'dirty room##')
-  expect(isAnagramTest).toBe(true)
+  expect(isAnagram('dormitory', 'dirty room')).toBeTruthy();
 });
 
 test('"Hello" is NOT an anagram of "Aloha"', () => {
   // Complete here
-  const isAnagramTest = isAnagram('Hello', 'Aloha')
-  expect(isAnagramTest).toBe(false)
+  expect(isAnagram('hello', 'aloha')).toBeFalsy();
 });
 
 /*
@@ -70,7 +66,6 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 /*
 * Informations
 */
-
 // CHECK FOR true & false VALUES
 // toBeNull matches only null
 // toBeUndefined matches only undefined
@@ -97,17 +92,25 @@ test('User should be Marc Antoine object', () => {
 
 // Less than and greater than
 test('Should be under or equal 1000', () => {
+  const load1 = 500;
+  const load2 = 500;
   // Complete here
-  expect(functions.checkValue(1000)).toBeGreaterThanOrEqual(1000);
+  expect(functions.add(load1, load2)).toBeLessThanOrEqual(1000);
 });
 
 // Regex
 test('There is no I in the word team', () => {
   // Complete here
+  expect('team').not.toEqual(stringMatching(/i/));
 });
 
 // Arrays
 test('Admin should be in usernames', () => {
+  usernames = ['john', 'karen', 'admin'];
+  // Complete here
+  expect(usernames).not.toEqual(
+    expect.arrayContaining('admin'),
+  );
 });
 
 // Working with async data
@@ -123,14 +126,15 @@ test('User fetched name should be Leanne Graham', async () => {
 const reverseString = require('../src/reversestr');
 test('reverseString function exists', () => {
   // Complete here
-  //expect(reverseString()).toBe(true)
+    expect(reverseString()).toBeDefined();
 });
 
 test('String reverses', () => {
   // Complete here
-  const value = reverseString('mathieu').join
+    expect(reverseString.reverse('lucas')).toBe('sacul');
 });
 
 test('String reverses with uppercase', () => {
   // Complete here
+    expect(reverseString.reverse.toLowerCase('MaRcUS')).toBe('sucram');
 });

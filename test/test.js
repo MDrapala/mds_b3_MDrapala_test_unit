@@ -101,18 +101,16 @@ test('Should be under or equal 1000', () => {
 // Regex
 test('There is no I in the word team', () => {
   // Complete here
-  expect('team').not.toEqual(stringMatching(/I/));
+  expect(functions.checkValue('team')).not.toMatch(/I/);
 });
-
 // Arrays
 test('Admin should be in usernames', () => {
   usernames = ['john', 'karen', 'admin'];
   // Complete here
-  expect(usernames).not.toEqual(
-    expect.arrayContaining(['admin']),
+  expect(usernames).toEqual(
+    expect.arrayContaining(['admin'])
   );
 });
-
 // Working with async data
 // Async Await since ES7
 test('User fetched name should be Leanne Graham', async () => {
@@ -131,10 +129,10 @@ test('reverseString function exists', () => {
 
 test('String reverses', () => {
   // Complete here
-    expect(reverseString.reverse('lucas')).toBe('sacul');
+    expect(reverseString('lucas')).toBe('sacul');
 });
 
 test('String reverses with uppercase', () => {
   // Complete here
-    expect(reverseString.reverse.toLowerCase('MaRcUS')).toBe('sucram');
+    expect(reverseString('MaRcUS')).toBe('sucram');
 });

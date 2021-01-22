@@ -22,6 +22,9 @@ Documentation Jest FrameWork : https://jestjs.io/docs/en/getting-started.
 #Installation + Exécution des tests
 
 ```git clone https://github.com/MDrapala/mds_b3_MDrapala_test_unit.git```
+
 ```cd mds_b3_MDrapala_test_unit```
+
 ```npm install```
+
 ```npm test```

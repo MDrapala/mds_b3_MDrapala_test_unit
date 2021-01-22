@@ -5,7 +5,7 @@ const isAnagram = require('../src/anagram');
 */
 test('isAnagram function exists', () => {
   // Complete here
-  expect(isAnagram()).toBeDefined();
+  expect(isAnagram('t','t')).toBeDefined();
 });
 
 test('"cinema" is an anagram of "iceman"', () => {
@@ -101,7 +101,7 @@ test('Should be under or equal 1000', () => {
 // Regex
 test('There is no I in the word team', () => {
   // Complete here
-  expect('team').not.toEqual(stringMatching(/i/));
+  expect('team').not.toEqual(stringMatching(/I/));
 });
 
 // Arrays
@@ -109,7 +109,7 @@ test('Admin should be in usernames', () => {
   usernames = ['john', 'karen', 'admin'];
   // Complete here
   expect(usernames).not.toEqual(
-    expect.arrayContaining('admin'),
+    expect.arrayContaining(['admin']),
   );
 });
 
@@ -126,7 +126,7 @@ test('User fetched name should be Leanne Graham', async () => {
 const reverseString = require('../src/reversestr');
 test('reverseString function exists', () => {
   // Complete here
-    expect(reverseString()).toBeDefined();
+    expect(reverseString('t')).toBeDefined();
 });
 
 test('String reverses', () => {

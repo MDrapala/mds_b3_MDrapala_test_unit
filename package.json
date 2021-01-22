@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage"
   },
   "keywords": [
     "MDS",
@@ -12,8 +13,9 @@
     "unit",
     "tests"
   ],
-  "author": "MDS",
+  "author": "",
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^24.8.0"
   },
   "dependencies": {

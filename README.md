@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
-#Projet tests unitaire avec JEST - MyDigitalSchool
+# Projet tests unitaire avec JEST - MyDigitalSchool
 
 ### Préambule
 Il s’agit de diverses fonctions à tester :
